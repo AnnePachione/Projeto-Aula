@@ -1,0 +1,55 @@
+html, body {
+    padding:0;
+    margin: 0;
+    height: 100%;
+    }
+
+body {
+    background: #00c3ff;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffff1c, #00c3ff);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffff1c, #00c3ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    }
+
+.logoImg {
+    width: 4rem;
+    vertical-align: middle;
+}
+
+a {
+    text-decoration: none;
+    color:rgb(248, 252, 248);
+    font-size: 1,4rem
+}
+
+.menu ul {
+        padding:0;
+        margin:10px;
+        list-style: none;
+}
+
+.menu ul li {
+    display:inline;
+}
+
+.menu ul li a:hover {
+    color:#18043d;
+    transition: 0,5s;
+}
+
+.menuDiv {
+    float:right;
+    margin:17px;
+}
+
+.menuDiv li {
+    margin:2rem;
+    padding:2rem;
+}
+
+.menu {
+    font-family: sans-serif;
+    font-size: 1rem;
+}
+
+

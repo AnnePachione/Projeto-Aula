@@ -1,0 +1,17 @@
+<html>
+<body onLoad="alert('A página terminou de ser carregada')">
+	<h1>Aprendendo JS</h1>
+	<h2 onClick="confirm(':tecnóloga::tom-de-pele-5: SIM!!!')">Posso ser clicado?</h2>
+	<p>Um evento irá ocorrer após o input ser preenchido</p>
+	<label>Digite seu nome:</label>
+	<input type="text" id="fName" onchange="myFunction()">
+	<p>A qualquer alteração no input, é acionada uma função. </p>
+<script>
+	function myFunction() {
+	  var nome = document.getElementById("fName");
+	  nome.value = nome.value.toUpperCase();
+	  nome.style = "background: yellow"
+}
+</script>
+</body>
+</html>

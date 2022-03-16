@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+<img
+	onmouseover="bigImg(this)"
+    onmouseout="smallImg(this)"
+    onkeydown="myFunction()"
+    src="smiley.gif">
+<input type="text" id="meuinput" onkeydown="myFunction()" onkeyup="keyupFunction()">
+<script>
+function bigImg(x) {
+  x.style.height = "164px";
+  x.style.width = "164px";
+}
+function smallImg(x) {
+  x.style.height = "16px";
+  x.style.width = "16px";
+}
+function myFunction(){
+	var meuinput = document.getElementById("meuinput")
+    var maxNum = 4
+    if(meuinput.value.length >= maxNum) {
+    	alert("ultrapassou o limite de caracteres")
+    }
+}
+</script>
+</body>
+</html>

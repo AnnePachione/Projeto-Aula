@@ -1,0 +1,13 @@
+function formatarMensagem(textoEntrada) {
+	if(textoEntrada == undefined)
+		return "não teve parâmetro...";
+	let data = new Date();
+	let hora = data.getHours();      // 0-23h
+	let min = data.getMinutes();     // 0-59min
+	let seg = data.getSeconds();     // 0-59s
+	let msg_formatada = hora + ":" + min + ":" + seg + ": " + textoEntrada;
+	return msg_formatada; //retorna o texto de entrada formatado com a hora
+}
+console.log( formatarMensagem("Um texto qualquer") );
+console.log( formatarMensagem() );
+console.log( formatarMensagem("Outro texto qualquer") );

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+var login = "Anne";
+var senha = "anneAnne";
+
+alert("Coloque seu login e senha");
+var login = prompt ("Qual seu nome?");
+var senha = prompt ("Qual sua senha?");
+
+if(login == "Anne" && senha == "anneAnne") {
+    console.log("Usuário logado com sucesso");
+    document.write("Usuário logado com sucesso");
+}
+else if(login == "Anne" && senha != "anneAnne") {
+    console.log("Usuário correto senha errada");
+    document.write("Usuário correto senha errada");
+} 
+else if(login != "Anne" && senha == "anneAnne") {
+    console.log("Usuário errado senha correta");
+    document.write("Usuário errado senha correta");
+} 
+else {
+    console.log("Login ou senha errados");
+    document.write("Usuário ou senha incorretos");
+}
+    </script>
+</body>
+</html>

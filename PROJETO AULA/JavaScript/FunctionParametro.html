@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+function logComHora(textoEntrada, numeroEntrada) {
+	let data = new Date();   // Date é um objeto com os dados da data atual
+	let hora = data.getHours();   // 0-23
+	let min = data.getMinutes();  // 0-59
+	let seg = data.getSeconds();  // 0-59
+	let horaFormatada = hora + ':' + min + ':' + seg;
+	// Exibe a hora e o parâmetro concatenados
+	console.log(horaFormatada, ":", textoEntrada, ":", numeroEntrada);
+}
+// chama a função e indica qual valor vai ser recebido pelo parâmetro
+logComHora("Você executou determinada ação");
+logComHora("meu valor é ", 455)
+logComHora(455, "meu valor é ")
+</script>
+</body>
+</html>
